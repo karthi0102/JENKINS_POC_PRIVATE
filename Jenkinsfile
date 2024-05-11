@@ -12,5 +12,10 @@ pipeline {
                 sh 'echo hello github pullg'
             }
         }
+        stage('run'){
+            steps {
+                sh 'node index.js'
+            }
+        }
     }
 }
